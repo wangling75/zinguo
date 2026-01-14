@@ -1,7 +1,7 @@
 {
-  "domain": "zinguo",
+  "domain": "zingguo",
   "name": "峥果智能浴霸",
-  "documentation": "https://github.com/wangling75/zinguo",
+  "documentation": "https://github.com/wangling75/zingguo",
   "dependencies": [],
   "codeowners": ["@user"],
   "config_flow": true,
