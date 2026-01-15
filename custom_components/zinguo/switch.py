@@ -40,7 +40,7 @@ class ZinguoLogicSwitch(CoordinatorEntity, SwitchEntity):
     def __init__(self, coordinator, api, mac, name, key, icon):
         super().__init__(coordinator)
         self.api, self.mac, self.key = api, mac, key
-        self._attr_name = f"浴霸 {name} ({mac[-4:]})"
+        self._attr_name = f"{name} ({mac[-4:]})"
         self._attr_unique_id = f"zinguo_{mac}_{key}"
         self._attr_icon = icon
 
@@ -103,7 +103,7 @@ class ZinguoAllOffSwitch(CoordinatorEntity, SwitchEntity):
     def __init__(self, coordinator, api, mac):
         super().__init__(coordinator)
         self.api, self.mac = api, mac
-        self._attr_name = f"浴霸 全关 ({mac[-4:]})"
+        self._attr_name = f"全关 ({mac[-4:]})"
         self._attr_unique_id = f"zinguo_{mac}_all_off"
         self._attr_icon = "mdi:power-off"
 
@@ -156,7 +156,7 @@ class ZinguoProtectionSwitch(CoordinatorEntity, SwitchEntity):
     def __init__(self, coordinator, api, mac):
         super().__init__(coordinator)
         self.api, self.mac = api, mac
-        self._attr_name = f"浴霸 温控保护 ({mac[-4:]})"
+        self._attr_name = f"温控保护 ({mac[-4:]})"
         self._attr_unique_id = f"zinguo_{mac}_protection"
         self._attr_icon = "mdi:shield-check"
 
